@@ -1,0 +1,57 @@
+/*
+estilos para la imagen que no andad o baja
+*/
+
+.ewk_cont_banner_sec_3 {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/09/09/17/computer-1245714_960_720.jpg");
+    position: relative;
+    padding: 10%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.ewk_cont_banner_sec_3 .row {
+    background-color: rgba(1, 1, 1, 0.7);
+    color: #fff;
+    padding: 2%;
+}
+
+.ewk_cont_img {
+    padding: 5%;
+}
+
+
+/*
+stilos para el _footer.ejs
+*/
+
+.ewk_cont_sec_1 hr {
+    border-top: 1px solid rgba(1, 1, 1, 0.3);
+}
+
+.ewk_cont_footer {
+    background-color: rgba(1, 1, 1, 0.7);
+    padding: 10%;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.ewk_cont_footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.ewk_cont_img_footer {
+    padding: 5%;
+}
+
+.zaq {
+    max-width: 100%;
+    max-height: 20%;
+}
