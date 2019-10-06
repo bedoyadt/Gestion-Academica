@@ -22,12 +22,14 @@
 
 
     <link rel="stylesheet" href="css/banner.css">
+ <!-- para los alets -->
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
 
-     
 </head>
 
 <body>
 {{>navigation}}
+
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -43,10 +45,10 @@
 </div>
     
     
-  
+ {{>message}} 
   {{{ body }}}
  
-  {{>message}} 
+  
 
 
 <div class="ewk_cont_footer">
@@ -155,5 +157,7 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
 
+<!-- para los alets -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
 </body>
 </html>
