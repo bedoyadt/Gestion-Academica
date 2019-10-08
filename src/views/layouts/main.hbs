@@ -2,162 +2,186 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Notes App</title>
-  {{!-- GOOGLE FONTS --}}
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  {{!-- BOOTSTRAP 4 --}}
-  <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
-  {{!-- FONT AWESOME 5 --}}
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
-  {{!-- STYLES --}}
-  <!-- para el efacto de las imagenes -->
+    <meta charset="UTF-8">
+    <title>Notes App</title>
+    {{!-- GOOGLE FONTS --}}
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    {{!-- BOOTSTRAP 4 --}}
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    {{!-- FONT AWESOME 5 --}}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    {{!-- STYLES --}}
+    <!-- para el efacto de las imagenes -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <link rel="stylesheet" href="css/banner.css">
- <!-- para los alets -->
-     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <!-- para los alets -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
 
+
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 
 <body>
-{{>navigation}}
+    {{>navigation}}
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(33).jpg">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg">
-    </div>
-  </div>
-</div>
-    
-    
- {{>message}} 
-  {{{ body }}}
- 
-  
-
-
-<div class="ewk_cont_footer">
-    <section class="page-footer font-small stylish-color lighten-2 pt-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 style="font-family: cursive;"><strong>Escribanos | Nuestro personal esta listo para atenderte</strong></h1>
-                    <p style="font-family: cursive;">Somos numero uno en stencion al Cliente</p>
-                </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg">
             </div>
-            <div class="row">
-                <div class=" col s12">
-                    <form action="/send-email" method="POST">
-                        <div class="md-form mt-0 input-field col s12 ">
-                            <input type="text" name="nombre" id="nombre" required class="form-control text-white ">
-                            <label for="nombre " class="text-uppercase font-weight-bold  text-white">¿Cuál es tu Nombre?</label>
-                        </div>
-                        <div class="md-form mt-0 input-field col s12 ">
-                            <input type="email" name="email" id="email" required class="form-control text-white">
-                            <label for="email " class="text-uppercase font-weight-bold  text-white">Correo Electrónico</label>
-                        </div>
-                        <div class="md-form mt-0 input-field col s12 ">
-                            <input type="text" name="telefono" id="telefono" required class="form-control text-white">
-                            <label for="telefono " class="text-uppercase font-weight-bold  text-white">Telefono</label>
-                        </div>
-                        <div class="md-form mt-0 input-field col s5">
-                            <textarea name="comentatio" id="comentatio" class="form-control md-textarea text-white" rows="3"></textarea>
-                            <label for="comentatio" class="text-uppercase font-weight-bold  text-white">Cuentanos más</label>
-                        </div>
-                        <div class="col-md-6 container">
-                            <button class="btn btn-info  btn-block my-4 waves-effect z-depth-0 ">Guardar</button>
-                        </div>
-                    </form>
-                </div>
-
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(33).jpg">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg">
             </div>
         </div>
-    </section>
-    <footer>
+    </div>
 
-        <div class="container my-4">
-            <div class="row">
-                <div class="col-md-3">
-                    <h2>EWebik</h2>
-                    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-                </div>
-                <div class="col-md-3">
-                    <h2>Categorías</h2>
-                    <a href="#">Inicio</a>
-                    <a href="#">Conocenos</a>
-                    <a href="#">Proyectos</a>
-                    <a href="#">Escribenos</a>
-                </div>
 
-                <div class="col-md-3">
-                    <h2>Recomendado</h2>
-                    <!-- 
+    {{>message}}
+    {{{ body }}}
+
+
+
+
+    <div class="ewk_cont_footer ">
+        <section class="page-footer font-small stylish-color lighten-2 pt-4 " id="ir-arriba">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 style="font-family: cursive;"><strong>Escribanos | Nuestro personal esta listo para
+                                atenderte</strong></h1>
+                        <p style="font-family: cursive;">Somos numero uno en stencion al Cliente</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" col s12">
+                        <form action="/send-email" method="POST">
+                            <div class="md-form mt-0 input-field col s12 ">
+                                <input type="text" name="nombre" id="nombre" required class="form-control text-white ">
+                                <label for="nombre " class="text-uppercase font-weight-bold  text-white">¿Cuál es tu
+                                    Nombre?</label>
+                            </div>
+                            <div class="md-form mt-0 input-field col s12 ">
+                                <input type="email" name="email" id="email" required class="form-control text-white">
+                                <label for="email " class="text-uppercase font-weight-bold  text-white">Correo
+                                    Electrónico</label>
+                            </div>
+                            <div class="md-form mt-0 input-field col s12 ">
+                                <input type="text" name="telefono" id="telefono" required
+                                    class="form-control text-white">
+                                <label for="telefono "
+                                    class="text-uppercase font-weight-bold  text-white">Telefono</label>
+                            </div>
+                            <div class="md-form mt-0 input-field col s5">
+                                <textarea name="comentatio" id="comentatio" class="form-control md-textarea text-white"
+                                    rows="3"></textarea>
+                                <label for="comentatio" class="text-uppercase font-weight-bold  text-white">Cuentanos
+                                    más</label>
+                            </div>
+                            <div class="col-md-6 container">
+                                <button class="btn btn-info  btn-block my-4 waves-effect z-depth-0 ">Guardar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <footer>
+
+            <div class="container my-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h2>EWebik</h2>
+                        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>Categorías</h2>
+                        <a href="#">Inicio</a>
+                        <a href="#">Conocenos</a>
+                        <a href="#">Proyectos</a>
+                        <a href="#">Escribenos</a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h2>Recomendado</h2>
+                        <!-- 
                     <a href="#">
                         <p>Aprende Diseño web en el 2019, te aseguro no te arrepnteras</p>
                         <p>Enero 2019</p>
                     </a>-->
-                    <hr />
-                    <a href="#">
-                        <p>Visita mi sitio web y siguenos en redes sociales</p>
-                        <p>Octubre 2019</p>
-                    </a>
-                </div>
-                <div class="col-md-3 ewk_cont_img_footer">
+                        <hr />
+                        <a href="#">
+                            <p>Visita mi sitio web y siguenos en redes sociales</p>
+                            <p>Octubre 2019</p>
+                        </a>
+                    </div>
+                    <div class="col-md-3 ewk_cont_img_footer">
 
-                    <h3>EWebik</h3>
-                    <p>Electrónica y Diseño Web</p>
+                        <h3>EWebik</h3>
+                        <p>Electrónica y Diseño Web</p>
+                    </div>
                 </div>
             </div>
-        </div>
-</div>
-</footer>
+    </div>
+    </footer>
+
+
+    <script>
+
+        $(document).ready(function () {
+            $('#a1').click(function () {
+                $('body, html').animate({ scrollTop: $('#ir-arriba').offset().top }, 3000);
+            });
+        });
+    </script>
 
 
 
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+    <!-- para el efacto de las imagenes -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- para el efacto de las imagenes -->
+    <script>
+        (function () {
+            AOS.init();
+        }());
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
 
 
 
- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
-  <!-- para el efacto de las imagenes -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!-- para el efacto de las imagenes -->
-<script>
-    (function() {
-        AOS.init();
-    }());
-</script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
 
-
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
-
-<!-- para los alets -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <!-- para los alets -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
 </body>
+
 </html>

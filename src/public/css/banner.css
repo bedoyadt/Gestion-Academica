@@ -51,7 +51,45 @@ stilos para el _footer.ejs
     padding: 5%;
 }
 
-.zaq {
-    max-width: 100%;
-    max-height: 20%;
+
+/*
+estilos para la imagen que no andad o baja login
+*/
+
+.ewk_cont_banner_sec_4 {
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://image.freepik.com/foto-gratis/libros-coloridos-frente-pizarra_23-2148207613.jpg");
+    position: relative;
+    padding: 5%;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+.ewk_cont_banner_sec_4 .row {
+    background-color: rgba(1, 1, 1, 0.7);
+    color: rgb(83, 75, 75);
+    padding: 2%;
+}
+
+.ewk_cont_banner_sec_5 {
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://image.freepik.com/foto-gratis/libros-coloridos-frente-pizarra_23-2148207613.jpg");
+    position: relative;
+    padding: 5%;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.ewk_cont_banner_sec_5 .row {
+    background-color: rgba(1, 1, 1, 0.7);
+    color: rgb(83, 75, 75);
+    padding: 2%;
 }

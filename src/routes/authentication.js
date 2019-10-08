@@ -21,8 +21,8 @@ router.get('/signin', (req, res) => {
 });
 
 router.post('/signin', (req, res, next) => {
-    req.check('username', 'Username is Required').notEmpty();
-    req.check('password', 'Password is Required').notEmpty();
+    req.check('username', 'Se requiere nombre de usuario').notEmpty();
+    req.check('password', 'Se requiere contraseña').notEmpty();
     const errors = req.validationErrors();
     if (errors.length > 0) {
         req.flash('message', errors[0].msg);
@@ -40,8 +40,12 @@ router.get('/logout', (req, res) => {
     res.redirect('/');
 });
 
+
 router.get('/profile', isLoggedIn, (req, res) => {
     res.render('profile');
 });
+//funcion para contatecnos
+
+
 
 module.exports = router;
