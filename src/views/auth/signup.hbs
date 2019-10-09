@@ -7,13 +7,14 @@
         </div>
         <div class="card-body px-lg-5 pt-0" data-aos="fade-up-right">
           <form action="/signup" method="POST">
+          <!--id_alumno	nombre_alumnos	email	password -->
             <div class="md-form">
-              <input type="text" name="fullname" required class="form-control" autofocus>
-              <label for="fullname">¿Cuál es tu Nombre?</label>
+              <input type="text" name="nombre_alumnos" required class="form-control" autofocus>
+              <label for="nombre_alumnos">¿Cuál es tu Nombre?</label>
             </div>
             <div class="md-form">
-              <input type="text" name="username" required class="form-control">
-              <label for="username">Nombre de usuario</label>
+              <input type="email" name="email" required class="form-control">
+              <label for="email">¿Cuál es tu Email?</label>
             </div>
             <div class="md-form">
               <input type="password" name="password" required class="form-control">

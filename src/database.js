@@ -19,7 +19,7 @@ pool.getConnection((err, connection) => {
     }
 
     if (connection) connection.release();
-    console.log('DB está conectado.');
+    console.log('La Base De Datos está conectado.');
 
     return;
 });

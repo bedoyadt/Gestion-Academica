@@ -19,9 +19,9 @@ router.post('/signup', passport.authenticate('local.signup', {
 router.get('/signin', (req, res) => {
     res.render('auth/signin');
 });
-
+//id_alumno	nombre_alumnos	email	password
 router.post('/signin', (req, res, next) => {
-    req.check('username', 'Se requiere nombre de usuario').notEmpty();
+    req.check('email', 'Se requiere Email').notEmpty();
     req.check('password', 'Se requiere contraseña').notEmpty();
     const errors = req.validationErrors();
     if (errors.length > 0) {
