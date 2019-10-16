@@ -2,10 +2,10 @@ module.exports = {
 
     database: {
         connectionLimit: 10,
-        host: 'localhost',
-        user: 'root',
-        password: 'bedoya701',
-        database: 'gestionacademica'
+        host: 'bzaacu9zqwtmmf3caoft-mysql.services.clever-cloud.com',
+        user: 'uamvwpsgzqm6purd',
+        password: '3ctV751sQWlM3p2nP1UP',
+        database: 'bzaacu9zqwtmmf3caoft'
     }
 
 };
