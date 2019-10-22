@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/banner.css">
     <!-- para los alets -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <!-- imagenes -->
 
 
 
@@ -33,25 +34,59 @@
 <body>
     {{>navigation}}
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg">
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner ">
+                <div class="carousel-item active ">
+                    <img src="img/aprendiendo-billetes-colegio-7095.jpg" class=" " style="height: 600px; width: 100%;">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(1, 1, 1, 0.7)">
+                        <a class="" href="/logout">
+                            <h1 class="text-success"> ¡Consulta!</h1>
+                        </a>
+                        <p> Ya se encuentran disponibles los resultados del último examen de admisión.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/2983847.jpg" class=" " style="height: 600px; width: 100%;">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(1, 1, 1, 0.7)">
+                        <a href="/logout">
+                            <h1 class="text-success">43 plazas vacantes</h1>
+                        </a>
+                        <p>Pueden participar todos los ciudadanos colombianos, que cumplan con los requisitos mínimos
+                            del cada plaza.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/adentro-asientos-audiencia-356065.jpg"style="height: 600px; width: 100%;">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(1, 1, 1, 0.7)">
+                        <a href="/logout">
+                            <h1 class="text-success">Programa de Salud</h1>
+                        </a>
+                        <p>Conoce la red prestadora de servicios de salud del Programa. para sus afiliados y
+                            beneficiarios.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(33).jpg">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg">
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 
-
     {{>message}}
     {{{ body }}}
-
-
 
 
     <div class="ewk_cont_footer ">
@@ -68,7 +103,8 @@
                     <div class=" col s12">
                         <form action="/send-email" method="POST">
                             <div class="md-form mt-0 input-field col s12 ">
-                                <input type="text" name="nombre_apellido" id="nombre_apellido" required class="form-control text-white ">
+                                <input type="text" name="nombre_apellido" id="nombre_apellido" required
+                                    class="form-control text-white ">
                                 <label for="nombre_apellido " class="text-uppercase font-weight-bold  text-white">¿tu
                                     Nombre?</label>
                             </div>

@@ -47,5 +47,4 @@ router.get('/profile', isLoggedIn, (req, res) => {
 //funcion para contatecnos
 
 
-
 module.exports = router;
