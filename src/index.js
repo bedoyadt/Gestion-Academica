@@ -56,8 +56,13 @@ app.use(require('./routes/index'));
 app.use(require('./routes/authentication'));
 //app.use(require('./routes/vermas'));
 //app.use('/vermas', require('./routes/vermas'));
-
+//inportante para el EMAIL
+const router = require('./Routes/index_Email');
 // Public
+//inportante para el EMAIL
+app.use('/', router);
+
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Starting
