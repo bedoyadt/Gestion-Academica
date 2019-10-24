@@ -2,8 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 const passport = require('passport');
-const { isLoggedIn } = require('../lib/auth');
+//const { isLoggedIn } = require('../lib/auth');
 
+const pool = require('../database');
+const { isLoggedIn } = require('../lib/auth');
 // SIGNUP
 router.get('/signup', (req, res) => {
     res.render('auth/signup');
@@ -44,7 +46,6 @@ router.get('/logout', (req, res) => {
 router.get('/profile', isLoggedIn, (req, res) => {
     res.render('profile');
 });
-//funcion para contatecnos
 
 
 module.exports = router;
